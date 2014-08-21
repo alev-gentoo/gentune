@@ -1,0 +1,5 @@
+[[ -f ~/.bashrc ]] && . ~/.bashrc
+
+export GTK_IM_MODULE="xim"
+
+export PATH="$PATH:~/bin"
