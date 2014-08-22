@@ -46,3 +46,6 @@ else
 
     raise IOError, 'Mount error' if $?.to_i != 0
 end
+
+# vim: sw=2 sts=2 ts=8:
+

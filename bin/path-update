@@ -1,0 +1,24 @@
+#!/usr/bin/ruby
+
+vadd = []
+vdel = []
+
+ARGV.each do |arg|
+  arg = arg.strip
+
+  (arg[0] == '-' ? vdel : vadd) <<
+    arg[ (['+', '-'].include?(arg[0]) ? 1 : 0) .. -1 ].strip
+end
+
+path = ENV['PATH'].split ':'
+
+path += vadd
+
+path -= vdel
+
+path = path.uniq
+
+print path.join ':'
+
+# vim: sw=2 sts=2 ts=8:
+
