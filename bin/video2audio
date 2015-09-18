@@ -1,1 +1,0 @@
-mplayer -quiet -vo null -vc dummy -af volume=0,resample=44100:0:1 -ao pcm:waveheader:file=$2 $1

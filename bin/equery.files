@@ -1,2 +1,0 @@
-#!/bin/sh
-equery files --tree $1
